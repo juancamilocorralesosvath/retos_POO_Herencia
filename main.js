@@ -7,6 +7,29 @@ class Electrodomestico {
         this.consumoEnergetico = 100;
     }
 
+    setPrecio(precio){ 
+      this.precio = precio;
+    }
+    getPrecio(){ 
+        return this.precio;
+    }
+
+    setColor(color){
+        this.color = color; 
+
+    } 
+
+    getColor(){ 
+        return this.color;
+    }
+
+    setCapacidad(capacidad){ 
+        this.capacidad = capacidad;
+    }
+    getCapacidad(){ 
+        return this.capacidad;
+    }
+
     setConsumoEnergetico(){ 
         this.consumoEnergetico = 100;
     }
@@ -16,9 +39,16 @@ class Electrodomestico {
 }
 
 class Lavadora extends Electrodomestico{ 
+    // carga son los kgs de ropa
     constructor(precio, color, capacidad, carga){ 
        super(precio, color, capacidad);
        this.carga = carga;
+    }
+    setCarga(carga){ 
+      this.carga = carga;
+    }
+    getCarga(){ 
+        return this.carga;
     }
 
     precioFinal(){ 
@@ -32,7 +62,6 @@ console.log(aLavarRopa.precioFinal());
 class Bebida { 
     constructor(cantidad){
         this.cantidad = cantidad; 
-
     }
 
     setCantidad(cantidad){ 
